@@ -1,0 +1,12 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+build:
+  version: "2.0"
+accounts:
+  message: "Welcome to account production microservice"
+  contactDetails:
+    name: "RG"
+    email: "rohitgunjal547@gmail.com"
+    phone: "8600668541"

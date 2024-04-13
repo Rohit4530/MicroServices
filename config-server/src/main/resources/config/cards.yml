@@ -1,0 +1,30 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: prod
+  config:
+     import:
+      - "cards-qa.yml"
+      - "cards-prod.yml"
+build:
+  version: "1.0"
+cards:
+  message: "Welcome to cards  microservice"
+  contactDetails:
+    name: "RG"
+    email: "rohitgunjal547@gmail.com"
+    phone: "8600668541"

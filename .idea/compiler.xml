@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Loans-Service" />
+        <module name="accounts-service" />
+        <module name="config-server" />
+        <module name="loans-service" />
+        <module name="cards-service" />
+        <module name="eureka-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accounts" target="17" />
+      <module name="Accounts-Service" target="17" />
+      <module name="cards" target="17" />
+      <module name="Cards-Service" target="17" />
+      <module name="configserver" target="17" />
+      <module name="loans" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Accounts-Service" options="-parameters" />
+      <module name="Cards-Service" options="-parameters" />
+      <module name="Loans-Service" options="-parameters" />
+      <module name="accounts-service" options="-parameters" />
+      <module name="cards-service" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="loans-service" options="-parameters" />
+    </option>
+  </component>
+</project>

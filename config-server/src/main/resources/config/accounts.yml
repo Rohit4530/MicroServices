@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/accountdb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver # Add this line to specify the MySQL driver
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update # You may want to consider removing or changing this line for MySQL
+  profiles:
+    active: prod
+  config:
+    import:
+      - "accounts-qa.yml"
+      - "accounts-prod.yml"
+
+build:
+  version: "3.0"
+accounts:
+  message: "Welcome to account microservice"
+  contactDetails:
+    name: "RG"
+    email: "rohitgunjal547@gmail.com"
+    phone: "8600668541"
